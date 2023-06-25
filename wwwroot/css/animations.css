@@ -1,0 +1,71 @@
+﻿/* Example animation: Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Example animation: Slide-in from left */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Example animation: Spin */
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* Example animation: Bounce */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apply animation to an element */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInFromLeft {
+    animation-name: slideInFromLeft;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    max-width:300px;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
